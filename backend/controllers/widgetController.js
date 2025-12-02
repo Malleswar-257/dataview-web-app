@@ -1,0 +1,1 @@
+const prisma = require('../prisma/client'); exports.getWidgets = async (req, res) => { const widgets = await prisma.widget.findMany(); res.json(widgets); };
