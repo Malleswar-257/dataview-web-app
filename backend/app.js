@@ -1,0 +1,1 @@
+const express = require('express'); const app = express(); const prisma = require('./prisma/client'); app.use(express.json()); const dashboardController = require('./controllers/dashboardController'); app.get('/api/dashboards', dashboardController.getDashboards);
