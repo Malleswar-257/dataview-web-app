@@ -1,0 +1,1 @@
+model Dashboard { id Int @id @default(autoincrement()) name String description String widgets Widget[] } model Widget { id Int @id @default(autoincrement()) type String data Json dashboard Dashboard @relation(fields: [dashboardId], references: [id]) dashboardId Int }
